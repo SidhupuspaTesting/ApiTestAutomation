@@ -3,6 +3,8 @@ import io.restassured.path.json.JsonPath;
 
 import static org.hamcrest.Matchers.*;
 
+import org.testng.Assert;
+
 import files.payload;
 
 import static io.restassured.RestAssured.*;
@@ -43,7 +45,10 @@ if(actualAddress.equals(expected_address))
 {
 	System.out.println("address updated");
 }	
+//or validate using testng
+Assert.assertEquals(expected_address, actualAddress);
 }
-	
+
+		
 }
 
