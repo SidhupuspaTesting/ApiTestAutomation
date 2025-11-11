@@ -37,8 +37,33 @@ for(int i=0;i<count;i++)
 	System.out.println(cource_price);
 }
 
+//print no of copies sold by RPA:
+//sample response: o/p should 10
+//{
+    //"title": "RPA",
+   // "price": 45,
+    //"copies": 10
+ // }
 
-
+JsonPath js2 = new JsonPath(payload.CoursePrice());
+int no_of_item=js2.getInt("courses.size()");
+String actual_title="RPA";
+for(int j=0;j<no_of_item;j++)
+{
+	String title=js.getString("courses["+j+"].title");
+	if(title.equalsIgnoreCase(actual_title))
+	{
+		System.out.println("no of copies sold by RPA= "+js.getInt("courses["+j+"].copies"));
+		break;
 	}
 
 }
+
+
+}
+
+
+
+}
+
+
