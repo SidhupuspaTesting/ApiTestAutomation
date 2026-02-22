@@ -50,6 +50,27 @@ public static String  CoursePrice() {
 			+ "}\r\n"
 			+ "";
 }
+
+public static String AddBook(String isbn,String aisle )
+{
+//how to concat string inside string
+//So first point, put a double quote to end this existing string like this you put, and thereafter
+//if you want to add variable immediately after string .you have to put plus concatenation operator
+//So if you want to continue again, put again plus operator to say that writing variable is done,
+//If you want to start variable, you have to start with plus icon and if your variable part is done, again
+//you have to give plus operator to say you are done.And if you want to continue with the new string again,
+//So you have terminated that string there, right?To open your new string again, put a single
+//I mean put a double quote again and that's it.
+return "{\r\n"
+		+ "\"name\":\"Learn Appium Automation with Java\",\r\n"
+		+ "\"isbn\":\""+isbn+"\",\r\n"
+		+ "\"aisle\":\""+aisle+"\",\r\n"
+		+ "\"author\":\"John foe\"\r\n"
+		+ "}";	
+
+//So what we have done now, so these two variables ,we are sending the road test
+//and based upon these two variables this Addbook method dynamically creating a new JSON and it's sending back.
+}
 	
 }
 
