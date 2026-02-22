@@ -22,8 +22,8 @@ public void addBook(String isbn,String aisle)
 	then().assertThat().statusCode(200).extract().response().asString();
    JsonPath js = ReusableMethod.rawToJson(response)	;
    //This is the sample response :
-
-//  {
+//
+//   {
 //       "Msg": "successfully added",
 //       "ID": "bcd237"
 //   }
