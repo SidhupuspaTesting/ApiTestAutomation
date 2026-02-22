@@ -9,7 +9,7 @@ public class ComplexJsonParse {
 		
 //create jsonpath object and pass the generic class method here CoursePrice() initialized in payload.java
 				
-
+//
 JsonPath js =new JsonPath(payload.CoursePrice());
 //Q1: print no of cources returned by api:
 //size will return no of iteam 

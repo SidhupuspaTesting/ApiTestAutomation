@@ -30,7 +30,7 @@ public class OAuthTest {
 	queryParam("access_token", accessToken).
 	when().get("https://rahulshettyacademy.com/oauthapi/getCourseDetails").asString();
 	System.out.println(respose2);
-	//
+	
 	}
 
 }
