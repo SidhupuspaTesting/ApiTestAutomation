@@ -23,8 +23,7 @@ public void addBook(String isbn,String aisle)
    JsonPath js = ReusableMethod.rawToJson(response)	;
    //This is the sample response :
 
-   //
-//   {
+//  {
 //       "Msg": "successfully added",
 //       "ID": "bcd237"
 //   }
