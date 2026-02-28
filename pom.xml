@@ -43,10 +43,14 @@
     <artifactId>selenium-java</artifactId>
     <version>4.27.0</version>
 </dependency>
-
-
-
-
+<!--So this gives you the capability of deserialization as well as serialization-->
+<!-- Source: https://mvnrepository.com/artifact/tools.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>tools.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>3.0.3</version>
+    <scope>compile</scope>
+</dependency>
 
 </dependencies>
 </project>
